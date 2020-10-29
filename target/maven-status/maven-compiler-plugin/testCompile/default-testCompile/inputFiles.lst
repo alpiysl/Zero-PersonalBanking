@@ -1,0 +1,10 @@
+/Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/java/com/zerobank/pages/MainPage.java
+/Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/java/com/zerobank/stepdefinitions/AccountActivityNavigations.java
+/Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/java/com/zerobank/runners/CukesRunner.java
+/Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/java/com/zerobank/utilities/BrowserUtils.java
+/Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/java/com/zerobank/pages/AccountActivityPage.java
+/Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/java/com/zerobank/stepdefinitions/Hooks.java
+/Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/java/com/zerobank/utilities/Driver.java
+/Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/java/com/zerobank/pages/BasePage.java
+/Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/java/com/zerobank/utilities/ConfigurationReader.java
+/Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/java/com/zerobank/pages/LoginPage.java

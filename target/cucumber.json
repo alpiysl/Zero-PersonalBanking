@@ -1,0 +1,177 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-10-28T11:42:14.927Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3401255000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Checking Pay Bills Module",
+        "description": "",
+        "id": "pay-bills-module;checking-pay-bills-module",
+        "after": [
+          {
+            "result": {
+              "duration": 80109000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.zerobank.stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1533251000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User able to login",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.AccountSummary.user_able_to_login()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2758536000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "click on Pay Bills",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBills.click_on_Pay_Bills()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8706000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the page must have \"Zero - Pay Bills\" title",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Zero - Pay Bills\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.zerobank.stepdefinitions.AccountSummary.the_page_must_have_title(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 179692000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user fills the blanks",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBills.user_fills_the_blanks()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 17101000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Amount field should not accept alphabetical or special characters.",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBills.amount_field_should_not_accept_alphabetical_or_special_characters()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16479000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Date field should not accept alphabetical characters.",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBills.date_field_should_not_accept_alphabetical_characters()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 254138000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click On Pay",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBills.click_On_Pay()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2024839000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "The payment was successfully submitted. displayed",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBills.the_payment_was_successfully_submitted_displayed()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56271000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user tries to make a payment without entering the amount or date,",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBills.user_tries_to_make_a_payment_without_entering_the_amount_or_date()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 19026000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Please fill out this field displayed.",
+            "match": {
+              "location": "com.zerobank.stepdefinitions.PayBills.please_fill_out_this_field_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@p"
+          }
+        ]
+      }
+    ],
+    "name": "Pay Bills Module",
+    "description": "",
+    "id": "pay-bills-module",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/PayBills.feature",
+    "tags": []
+  }
+]
