@@ -1,16 +1,79 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/PayBills.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AccountActivityNavigation.feature");
 formatter.feature({
-  "name": "Pay Bills Module",
+  "name": "Navigating to specific accounts in Accounts Activity Scenario: Savings account redirect",
   "description": "",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "name": "Checking Pay Bills Module",
-  "description": "",
-  "keyword": "Scenario",
+  "keyword": "Feature",
   "tags": [
     {
-      "name": "@p"
+      "name": "@AccountActivity"
+    }
+  ]
+});
+formatter.scenarioOutline({
+  "name": "\u003coptions\u003e account redirect",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.step({
+  "name": "the user clicks on \"\u003coptions\u003e\" link on the Account Summary page",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "the \"Account Activity\" page should be displayed",
+  "keyword": "Then "
+});
+formatter.step({
+  "name": "Account drop down should have \"Savings\" selected",
+  "keyword": "And "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "options"
+      ]
+    },
+    {
+      "cells": [
+        "Savings"
+      ]
+    },
+    {
+      "cells": [
+        "Brokerage"
+      ]
+    },
+    {
+      "cells": [
+        "Checking"
+      ]
+    },
+    {
+      "cells": [
+        "Credit Card"
+      ]
+    },
+    {
+      "cells": [
+        "Loan"
+      ]
+    }
+  ]
+});
+formatter.scenario({
+  "name": "Savings account redirect",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@AccountActivity"
     }
   ]
 });
@@ -18,105 +81,277 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "User able to login",
+  "name": "the user is logged in",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.AccountSummary.user_able_to_login()"
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.the_user_is_logged_in()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "click on Pay Bills",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.PayBills.click_on_Pay_Bills()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "the page must have \"Zero - Pay Bills\" title",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.AccountSummary.the_page_must_have_title(java.lang.String)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "user fills the blanks",
+  "name": "the user clicks on \"Savings\" link on the Account Summary page",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.PayBills.user_fills_the_blanks()"
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.the_user_clicks_on_Savings_link_on_the_Account_Summary_page(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Amount field should not accept alphabetical or special characters.",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.PayBills.amount_field_should_not_accept_alphabetical_or_special_characters()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "Date field should not accept alphabetical characters.",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "com.zerobank.stepdefinitions.PayBills.date_field_should_not_accept_alphabetical_characters()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "click On Pay",
+  "name": "the \"Account Activity\" page should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.PayBills.click_On_Pay()"
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.thePageShouldBeDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "The payment was successfully submitted. displayed",
+  "name": "Account drop down should have \"Savings\" selected",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.PayBills.the_payment_was_successfully_submitted_displayed()"
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.account_drop_down_should_have_Savings_selected(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Brokerage account redirect",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@AccountActivity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.the_user_is_logged_in()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user tries to make a payment without entering the amount or date,",
+  "name": "the user clicks on \"Brokerage\" link on the Account Summary page",
   "keyword": "When "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.PayBills.user_tries_to_make_a_payment_without_entering_the_amount_or_date()"
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.the_user_clicks_on_Savings_link_on_the_Account_Summary_page(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "Please fill out this field displayed.",
+  "name": "the \"Account Activity\" page should be displayed",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "com.zerobank.stepdefinitions.PayBills.please_fill_out_this_field_displayed()"
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.thePageShouldBeDisplayed(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
 });
+formatter.step({
+  "name": "Account drop down should have \"Savings\" selected",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.account_drop_down_should_have_Savings_selected(java.lang.String)"
+});
+formatter.result({
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Brokerage]\u003e but was:\u003c[Savings]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat com.zerobank.stepdefinitions.AccountActivityNavigations.account_drop_down_should_have_Savings_selected(AccountActivityNavigations.java:66)\n\tat ✽.Account drop down should have \"Savings\" selected(file:///Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/resources/features/AccountActivityNavigation.feature:8)\n",
+  "status": "failed"
+});
+formatter.embedding("image/png", "embedded0.png", "screenshot");
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Checking account redirect",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@AccountActivity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.the_user_is_logged_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks on \"Checking\" link on the Account Summary page",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.the_user_clicks_on_Savings_link_on_the_Account_Summary_page(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the \"Account Activity\" page should be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.thePageShouldBeDisplayed(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Account drop down should have \"Savings\" selected",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.account_drop_down_should_have_Savings_selected(java.lang.String)"
+});
+formatter.result({
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Checking]\u003e but was:\u003c[Savings]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat com.zerobank.stepdefinitions.AccountActivityNavigations.account_drop_down_should_have_Savings_selected(AccountActivityNavigations.java:66)\n\tat ✽.Account drop down should have \"Savings\" selected(file:///Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/resources/features/AccountActivityNavigation.feature:8)\n",
+  "status": "failed"
+});
+formatter.embedding("image/png", "embedded1.png", "screenshot");
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Credit Card account redirect",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@AccountActivity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.the_user_is_logged_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks on \"Credit Card\" link on the Account Summary page",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.the_user_clicks_on_Savings_link_on_the_Account_Summary_page(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the \"Account Activity\" page should be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.thePageShouldBeDisplayed(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Account drop down should have \"Savings\" selected",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.account_drop_down_should_have_Savings_selected(java.lang.String)"
+});
+formatter.result({
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Credit Card]\u003e but was:\u003c[Savings]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat com.zerobank.stepdefinitions.AccountActivityNavigations.account_drop_down_should_have_Savings_selected(AccountActivityNavigations.java:66)\n\tat ✽.Account drop down should have \"Savings\" selected(file:///Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/resources/features/AccountActivityNavigation.feature:8)\n",
+  "status": "failed"
+});
+formatter.embedding("image/png", "embedded2.png", "screenshot");
+formatter.after({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Loan account redirect",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@AccountActivity"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user is logged in",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.the_user_is_logged_in()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the user clicks on \"Loan\" link on the Account Summary page",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.the_user_clicks_on_Savings_link_on_the_Account_Summary_page(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "the \"Account Activity\" page should be displayed",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.thePageShouldBeDisplayed(java.lang.String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "Account drop down should have \"Savings\" selected",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "com.zerobank.stepdefinitions.AccountActivityNavigations.account_drop_down_should_have_Savings_selected(java.lang.String)"
+});
+formatter.result({
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c[Loan]\u003e but was:\u003c[Savings]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:117)\n\tat org.junit.Assert.assertEquals(Assert.java:146)\n\tat com.zerobank.stepdefinitions.AccountActivityNavigations.account_drop_down_should_have_Savings_selected(AccountActivityNavigations.java:66)\n\tat ✽.Account drop down should have \"Savings\" selected(file:///Users/alpi/IdeaProjects/Zero-PersonalBanking/src/test/resources/features/AccountActivityNavigation.feature:8)\n",
+  "status": "failed"
+});
+formatter.embedding("image/png", "embedded3.png", "screenshot");
 formatter.after({
   "status": "passed"
 });
